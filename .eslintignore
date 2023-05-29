@@ -1,0 +1,8 @@
+.git
+.vscode
+src/react-app-env.d.ts
+node_modules
+dist
+.next
+
+cypress
