@@ -1,19 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import '@config/firebase';
+
+import { Navigation } from '@components/Navigation';
+import { AuthProvider } from '@providers/auth';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text>Open up App.tsx to start working on your app!</Text>
-		</View>
+		<AuthProvider>
+			<Navigation />
+		</AuthProvider>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-});
